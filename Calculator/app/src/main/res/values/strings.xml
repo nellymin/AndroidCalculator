@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculator</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="exit">Close the app cause probably you would not need to use it :D</string>
+    <string name="calculator">This is a simple calculator app</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
