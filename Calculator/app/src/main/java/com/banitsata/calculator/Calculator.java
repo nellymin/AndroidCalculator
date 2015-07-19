@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 
 /**
@@ -114,5 +116,16 @@ public class Calculator extends Activity {
     private void delayedHide(int delayMillis) {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
+    }
+
+    public void onButtonClick (View v) {
+        EditText FirstNum = (EditText)findViewById(R.id.FirstNumber);
+        EditText SecondNum = (EditText)findViewById(R.id.SecondNumber);
+        TextView Result = (TextView)findViewById(R.id.Result);
+        int FirstNumInt = Integer.parseInt(FirstNum.getText().toString());
+        int SecondNumInt = Integer.parseInt(FirstNum.getText().toString());
+        int ResultInt = FirstNumInt + SecondNumInt;
+        Result.setText(Integer.toString(ResultInt));
+
     }
 }
